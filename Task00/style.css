@@ -1,0 +1,13 @@
+*{
+    background-color: rgb(241, 234, 163);
+}
+h1 {
+    text-align: center;
+}
+p {
+    line-break: auto;
+}
+img{
+    border: solid;
+    width: 80%;
+}
