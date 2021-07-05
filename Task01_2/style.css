@@ -1,0 +1,83 @@
+body{
+    
+    background: -moz-linear-gradient(to top, rgb(73, 61, 61), rgb(3, 3, 3));
+
+}
+a:link{
+    color: aliceblue;
+}
+a:visited{
+    color: rgb(222, 241, 154);
+}
+a:hover{
+    color: rgb(70, 60, 71);
+}
+.mother1{
+
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.heading1{
+    background-color: rgb(164, 182, 117);
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    color: aliceblue;
+    height:33.3%;
+}
+.heading2{
+    width: 100%;
+    background-color:black;
+    height: 33.3%;   
+}
+
+.blue {
+    background-color: blue;
+    height: 33.3%;
+}
+.mother2{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery1{
+    width:33.3%;
+    height: 33.3%;
+}
+.gallery1:hover, .gallery2:hover, .gallery3:hover {
+    transform: scale(1.5);
+}
+.img1{
+    width: 100%;
+    height: 100%;
+}
+.gallery2{
+    height: 33.3%;
+    width: 100%;
+}
+.gallery3{    
+    height: 33.3%;
+    width: 50%;
+}
+.mother3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: url(img/8.jpeg);
+    padding: 3%;
+    justify-content: space-between;
+    width: 90%;
+    height: 25%;
+    margin: 20px auto;
+
+}
+
+.footer{
+    background-color: rgb(139, 138, 112);
+    width:25%;
+    margin: 10px;
+}
+

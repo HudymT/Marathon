@@ -1,0 +1,86 @@
+
+.container{
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-direction: column; 
+}
+.mother1{
+    margin-top: 5%;
+    margin-left: 5%;
+    width:75%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.red {
+    background-color: red;
+    height:33.3%;
+    
+   
+}
+.green {
+    background-color: green;
+    height: 33.3%;   
+}
+.blue {
+    background-color: blue;
+    height: 33.3%;
+}
+.mother2{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 75%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.red.dod, .blue.dod, .green.dod{
+    width:33.3%;
+}
+.yellow{
+    background-color:yellow;
+    height: 33.3%;
+    width: 100%;
+}
+.grey{
+    background-color:lightgray;
+    height: 33.3%;
+    width: 50%;
+}
+.black{
+    background-color:rgb(43, 68, 54);
+    height: 33.3%;
+    width: 50%;
+}
+.mother3{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(127, 212, 106);
+    padding: 1%;
+    justify-content: space-between;
+    width: 85%;
+    height: 25%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.r1{
+    background-color: red;
+    height: 80%;
+    width:25%;
+    padding: 4% 0 0 4%;
+}
+.g1{
+    background-color: green;
+    height: 80%;
+    width:25%;
+    padding: 4% 0 0 4%;
+
+}
+.b1{
+    background-color: blue;
+    height: 80%;
+    width:25%;
+    padding: 4% 0 0 4%;
+
+}
