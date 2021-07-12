@@ -1,0 +1,459 @@
+/*Less2 
+*{
+    color: red;
+}
+
+p{
+    color: green;
+}
+
+h1{
+    color: blue;
+}
+
+.heading1{
+    text-decoration: underline;
+}
+
+.heading2{
+    text-transform: uppercase;
+}
+
+p.fz20{
+    font-size: 20px;
+}
+
+#heading{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+q{
+    color: blue;
+}
+
+q.simple{
+    color: aqua;
+}
+
+body q.simple{
+    color: fuchsia;
+}
+*/
+
+
+/*Less3
+h1, h2, span{
+    color: red;
+}
+
+div p{
+    color:green;
+}
+
+div p span{
+    color: blue;
+}
+
+ul li > span{
+    font-weight: bold;
+}
+
+ul li + li {
+    color: aqua;
+}
+
+br ~ p{
+    font-size: 30px;
+}
+
+a[target]{
+   background-color: yellow;
+}
+
+a[target="_blank"]{
+    background-color: blue;
+}
+
+a[href^="http://123"]{
+    background-color: aqua;
+}
+
+a[href$=".jpg"]{
+    background-color: teal;
+}
+
+a[href*="link"]{
+    background-color: rebeccapurple;
+}
+*/
+
+
+/*Less4
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+}
+
+a:visited{
+    color: aqua;
+}
+
+a:active{
+    color:green;
+}
+
+a:focus{
+    font-weight: bold;
+}
+
+p::first-letter{
+    font-size: 40px;
+}
+
+p::first-line{
+    text-decoration: underline;
+}
+
+p::selection{
+    background-color: yellow;
+    color: red;
+}
+
+h1::before{
+    content: "This is ";
+    text-decoration: uppercase;
+}
+
+h1::after{
+    content: " channel";
+    color: red;
+}
+
+.list1 li:first-child{
+    color: blue;
+}
+
+.list1 li:last-child{
+    color: green;
+}
+
+.list2 li:nth-child(2){
+    color: blue;
+}
+
+.list2 li:nth-child(3){
+    color: green;
+}
+
+.list3 li:nth-child(3n + 1){
+    text-transform: uppercase;
+}
+
+.list3 li:nth-child(4n + 2){
+    border: 1px solid black;
+}
+
+.text span:first-of-type{
+    color: red;
+}
+
+.text span:last-of-type{
+    color: green;
+}
+
+.text span:nth-of-type(2){
+    color: 1px solid black;
+}
+
+.list4 li:not(.item){
+    border: 1px solid blue;
+}
+*/
+
+
+/*Less5
+/*p{
+    background-color: green;
+    color: white;
+    padding: 10px;
+  }
+  .style1{
+    background-color: aqua;
+    color: black;
+    border: none !important;
+  }
+  #style2{
+    background-color: pink;
+    border: 2px solid black;
+  }
+  p{
+    background-color: gray;
+  }
+
+body{
+    color: red;
+    border: 1px solid black;
+    margin-bottom: 30px;
+  }
+  
+  p{
+    border: inherit;
+    margin: inherit;
+  }
+*/
+
+/*Less6
+span,
+div{
+  border: 10px solid red;
+  margin: 10px 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.test{
+  display: inline;
+}
+
+span{
+  width: 100px;
+  height: 100px;
+}
+
+.mar{
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+*/
+
+
+/*Less7
+body{
+    height: 1000px;
+  }
+  
+  h4{
+    border: 1px solid black;
+    position: absolute;
+    bottom: 150px;
+  }
+  
+  .test{
+    border: 10px solid red;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box; 
+    position: sticky;
+    top: 20px;
+    right: 20px;
+    min-width: 100px;
+    max-width: 300px;
+  }
+*/
+
+/*Less8
+li{
+    font-size: 2rem;
+  }
+  
+  .main{
+    font-size: 10px;
+  }
+  
+  html{
+    font-size: 10px;
+  }
+  
+  .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .modal{
+    border: 2px solid black;
+    width: 300px;
+    height: 100px;
+    background-color: cornflowerblue;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    overflow:auto;
+  }
+  */
+
+
+  /*Less9
+.wrapper, .wrapper2, .item{
+  padding: 20px;
+  color: white;
+}
+
+.wrapper{
+  background-color: grey;
+}
+
+.wrapper:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper2{
+  background-color: green;
+}
+
+.item{
+  float: left;
+  width: 150px;
+}
+
+.item1{
+  background-color: crimson;
+}
+
+.item2{
+  background-color: cyan;
+}
+
+.item3{
+  background-color: blueviolet;
+}
+*/
+
+/*Less10
+body{
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: 100px;
+    font-style: italic;
+}
+  
+
+h1{
+      color:blueviolet;
+      text-decoration: underline overline line-through;
+      letter-spacing: 2px;
+      word-spacing: 10px;
+      line-height: 100px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+*/
+
+
+/*Less11
+.example{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px; 
+    border: 10px solid red;
+    border-right-style: none;
+    border-bottom-width: 20px;
+    border-left-color: blue;
+  }
+
+.example{
+    outline:10px  solid aqua;
+}
+
+button:focus, input:focus{
+    outline: 2px solid aqua;
+}
+
+.shadow{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+    box-shadow: inset 1px 2px 5px blueviolet, inset -2px -4px 5px lightgrey;
+  }
+
+h1{
+    text-shadow: 1px 2px 5px blue, -1px -2px 5px aqua;
+}*/
+
+
+/*Less12
+.example{
+    width: 100px;
+    height: 100px;
+    background-color:grey;
+    margin: 20px;
+    border-radius: 50px 40px 30px 20px;   
+}
+
+ul li{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+h1{
+    color: rgba(224, 196, 70, 0.5);
+}
+*/
+
+/*Less13*/
+.first{
+    display: none;
+
+}
+
+.second{
+    /*visibility: hidden;
+    opacity: 0;*/
+    color: transparent;
+}
+
+/*Less14
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngicon.ru%2Ffile%2Fuploads%2Fbelka_foto.png&f=1&nofb=1) 
+    center no-repeat fixed, url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-iZjf64TgT-w%2FT6KDmoKG2_I%2FAAAAAAAAASg%2Fm0zkE8Tf3eo%2Fs1600%2F%25D0%25BB%25D0%25B5%25D1%2581.jpg&f=1&nofb=1)
+
+}*/
+
+/*Less15*/
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+  }
+
+  .wrapper{
+    min-height: 100vh;
+    width: 100%;
+    /*background-image: linear-gradient(45deg, red 10%, orange 50%, yellow 70%, green, aqua, blue); */
+    /*background-image: repeating-linear-gradient(45deg, yellow 25px, black 25px, black 50px, yellow 50px, yellow 75px, black 75px); */
+    background-image: repeating-radial-gradient(circle, yellow 20px, red 80px);
+  }
