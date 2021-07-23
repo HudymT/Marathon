@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quattrocento+Sans&display=swap" rel="stylesheet"> 
+    <title>Modest</title>
+</head>
+<body>
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+            <path class="shp0" d="M304 383C304 423.2 303.9 463.3 304.1 503.5C304.1 507.9 302.9 509.1 298.5 509C264.3 508.8 230.2 508.8 196 509C191.3 509 189.8 507.9 189.8 503C190 423.3 189.9 343.7 189.9 264C189.9 256 190.8 257 182.6 256.9C168.1 256.9 153.6 256.8 139.1 257C135.6 257 134.6 255.9 134.6 252.4C134.7 227.1 134.7 201.7 134.6 176.4C134.6 172.9 135.6 171.8 139.1 171.9C154.3 172.1 169.4 171.8 184.6 172.1C188.7 172.2 190 171.1 190 166.8C189.8 145.5 190 124.1 189.9 102.8C189.8 85.1 192.5 68 201.4 52.4C211 35.4 225.4 23.7 243.2 16.1C258.2 9.7 274 6.7 290.2 5.8C322.3 4 354.5 5.5 386.6 4.9C390.2 4.8 391.1 6.1 391.1 9.5C391 35.8 391 62.2 391.1 88.5C391.1 92.5 389.6 93.1 386.1 93.1C367.6 93 349.1 93 330.6 93C315.2 93 304.1 104.1 304.1 119.3C304.1 135 304.3 150.6 304 166.3C303.9 170.8 305.4 171.9 309.7 171.9C335 171.7 360.4 171.9 385.7 171.7C389.9 171.7 391.3 172.9 390.8 177.1C389.3 190 388 202.9 386.6 215.8C385.3 228.2 383.1 240.5 381.1 252.8C380.5 256.3 379.4 257.1 376.2 257.1C354.5 257 332.9 257 311.2 257.1C302.7 257.1 303.9 256 303.9 264.6C304 304 304 343.5 304 383Z" />
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+		    <path class="shp0" d="M3.5 421.4C59.5 426.5 109.6 412.5 155 378.5C148 376.9 141.6 376.9 135.5 375.4C99.8 366.9 75.1 345.4 60.6 311.9C59.9 310.2 58.1 308.1 59.7 306.4C60.9 305.1 63.2 306.2 64.9 306.4C77.5 307.7 90.1 307.3 102.5 304.4C102.7 302.2 101.1 302.4 99.9 302C69.2 293.8 46.9 275.5 32.5 247.2C25.9 234.2 22.3 220.6 21.9 206C21.7 200.3 22 200.2 27.3 202.7C39.9 208.7 53.1 212.1 68.2 212.8C61.3 207.2 55.1 202.3 49.8 196.4C33.7 178.5 24.7 157.6 22.8 133.5C21.3 113.9 25.4 95.6 33.9 78C35.8 74.1 37.5 74.4 39.9 77.3C56.6 97.7 76.1 115 97.6 130C113.6 141.2 130.6 150.5 148.5 158.4C172.1 168.7 196.6 175.6 222 179.7C230 181 238.2 181.3 246.3 182.1C250.4 182.5 251.5 181.3 250.7 177.1C246.6 155.5 249.4 134.5 258.8 114.8C274.9 81.2 301.9 60.8 338.6 55.4C371.2 50.6 400.5 59.9 424.8 82.8C428.5 86.3 431.8 87.2 436.8 85.9C456.4 80.9 475.1 73.8 492.7 63.8C493.2 63.5 493.8 63.4 495.6 62.7C487.4 86.8 472.9 104.6 452.6 118.2C457.3 119.1 471.2 116.6 480.8 113.6C490 110.7 499.2 108.1 508 104.2C509.2 105.5 508.1 106.2 507.6 106.9C495.9 123.4 482.5 138.3 466.5 150.7C464.3 152.4 462.2 154.3 459.9 155.9C458.2 157.1 458.1 158.6 458.2 160.3C458.9 178.5 457.6 196.6 455 214.5C452.3 232.8 447.7 250.6 441.6 268.1C436.6 282.4 430.7 296.3 423.7 309.8C406.4 343 383.9 372.2 355.8 397.1C325.9 423.5 291.9 442.5 253.9 454.3C230.2 461.7 205.9 466 181 467.3C161.8 468.3 142.7 468 123.7 465.6C96.5 462.3 70.3 454.9 45.1 444.1C32.2 438.6 20 432 7.8 425.1C6.1 424.4 4.4 423.6 3.5 421.4Z" />
+	        </g>        </symbol>
+        <symbol id="linkedin" viewBox="0 0 478.165 478.165">
+            <g>
+            <path id="LinkedIn_3_" d="M478.165,290.794v176.742H375.638V302.549c0-41.481-14.783-69.673-51.881-69.673
+            c-28.371,0-45.107,19.087-52.578,37.456c-2.69,6.615-3.507,15.879-3.507,25.024v172.159H165.246c0,0,1.375-279.328,0-308.257
+            h102.447v43.692c-0.139,0.359-0.438,0.657-0.578,1.056h0.578v-1.056c13.687-20.999,37.934-50.925,92.385-50.925
+            C427.659,152.026,478.165,196.077,478.165,290.794z M57.997,10.629C22.952,10.629,0,33.621,0,63.945
+            c0,29.507,22.275,53.276,56.682,53.276H57.3c35.822,0,58.017-23.769,58.017-53.276C114.62,33.621,93.123,10.629,57.997,10.629z
+            M6.117,467.535h102.467V159.239H6.117V467.535z"/>
+            </g>
+        </symbol>
+        <symbol id="google" viewBox="0 0 512 512">
+            <g>
+            <path fill-rule="evenodd" class="shp0" d="M18.9 408.3C19.5 382.9 29.2 359.6 46.3 339.1C64.7 317 88.3 303.1 115.8 295.7C126.9 292.7 138.2 290.5 149.8 290.9C152.9 291 154.6 290.7 153 286.9C147.7 274.6 146.8 261.8 149 248.7C149.5 245.8 148.4 245.1 145.6 244.9C106.5 241.8 78.9 221.6 61 187.5C50.1 166.9 45.4 144.7 46.4 121.5C47.4 97.5 55.4 75.6 69.5 56.1C80.8 40.4 94.9 27.7 111.9 18.4C127.5 9.9 144 4.2 161.7 4C204.7 3.7 247.8 4 291 4C296.6 4 299.9 6.7 301.9 11.8C303.9 16.9 302.4 21.3 298.9 24.6C289.3 33.3 279.4 41.7 269.4 50C266.5 52.5 262.6 51.2 259.2 51.3C255.7 51.3 254 51.6 256.5 55.6C267.5 73 272.4 92.3 274.1 112.6C275.7 130.8 274.2 148.5 267.8 165.6C261.6 182.3 251.9 196.9 239.3 209.6C231.8 217.2 222.6 223.5 217.6 233.5C213.9 240.9 213.7 247.9 218.4 255.2C226.2 267.4 236.3 277.4 247.2 286.7C272.4 308 288.2 334.3 291 367.8C292.7 388.4 293 408.7 285.8 428.4C276.2 454.8 259.1 475.2 234.9 489.6C213.6 502.3 190.5 508.3 165.7 509.3C135.1 510.5 105.6 506 77.9 493C53.4 481.5 33.6 464.9 23.7 438.6C20.4 429.4 18.9 419.7 18.9 408.3ZM160.7 462.2C176.1 462 191.3 460.3 205.5 454C217.2 448.8 226.7 441 232.8 429.5C238.4 418.9 239.9 407.4 239.9 395.7C239.9 383.6 236.6 372.5 228 363.3C219.9 354.6 210.6 347.5 201.7 339.8C196.3 335.1 190.7 331.1 183.5 330.2C175.1 329.1 166.8 328 158.2 328.7C135.5 330.7 116.3 339.2 100.5 355.8C77.4 380.1 80.6 413.9 99.9 436.5C115.8 455.1 136.7 462.5 160.7 462.2ZM210.2 146.1C210.2 123.4 205.5 103.7 195.6 85C188.7 72 179.7 60.9 166.7 53.4C152 44.9 134.5 48.1 124.2 61.5C118.4 69 114.9 77.6 113 86.8C109.1 106.1 109.9 125.3 115.4 144.1C121.4 164.6 130.6 183.5 147.8 197.3C155.4 203.4 164 207.3 173.9 206.5C188.6 205.3 197 195.7 202.6 183.3C208.3 171 210.8 158 210.2 146.1Z" />
+            </g>
+        </symbol>
+        <symbol id="behance" viewBox="0 0 64 64">
+            <g><path class="cls-1" d="M28,30.21a8.13,8.13,0,0,0-6.91-12.5H8.75a1,1,0,0,0-1,1.05V46.09a1,1,0,0,0,1,1H22.56A9.32,9.32,0,0,0,28,30.21Zm-14.9-7h8.1a2.67,2.67,0,0,1,0,5.34h-8.1Zm9.56,18.53H13.12V34h9.56a3.87,3.87,0,0,1,0,7.74Zm0,0"/><path class="cls-1" d="M55.7,35.92A11.35,11.35,0,0,0,44.58,24.38,11.35,11.35,0,0,0,33.46,35.92,11.35,11.35,0,0,0,44.58,47.46a11,11,0,0,0,9.25-5.13,11.75,11.75,0,0,0,.7-1.25.48.48,0,0,0-.42-.68H48.64a.46.46,0,0,0-.32.13A5.16,5.16,0,0,1,44.58,42,5.81,5.81,0,0,1,39,37.25H54.61a1.09,1.09,0,0,0,1.09-1.1ZM44.58,29.83a5.63,5.63,0,0,1,4.77,2.76H39.82a5.61,5.61,0,0,1,4.76-2.76Zm0,0"/><path class="cls-1" d="M49.2,23H39.34a.84.84,0,0,1-.83-.84V19.7a.83.83,0,0,1,.83-.83H49.2a.84.84,0,0,1,.84.83v2.49a.85.85,0,0,1-.84.84Zm0,0"/></g>
+        </symbol>
+        <symbol id="dribbble" viewBox="0 0 438.533 438.533">
+            <g><path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+            c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+            c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+            s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+            C438.533,179.485,428.732,142.795,409.133,109.203z M219.27,31.977c47.201,0,88.41,15.607,123.621,46.82l-3.569,4.993
+            c-1.427,2.002-4.996,5.852-10.704,11.565c-5.709,5.708-11.943,11.136-18.699,16.274c-6.762,5.14-15.94,10.992-27.555,17.559
+            c-11.611,6.567-23.982,12.328-37.117,17.276c-21.887-40.355-45.296-76.709-70.231-109.064
+            C190.055,33.784,204.805,31.977,219.27,31.977z M72.524,103.06c18.271-23.026,40.537-40.73,66.806-53.1
+            c23.601,31.405,46.82,67.381,69.662,107.921c-57.862,15.227-115.532,22.841-173.014,22.838
+            C42.072,151.98,54.253,126.091,72.524,103.06z M44.54,286.794c-8.376-21.412-12.563-43.923-12.563-67.527
+            c0-2.666,0.098-4.665,0.286-5.996c68.905,0,132.955-8.848,192.149-26.553c6.092,11.8,11.136,22.364,15.133,31.693
+            c-0.771,0.38-1.999,0.806-3.713,1.283c-1.719,0.476-2.953,0.806-3.721,0.999l-10.561,3.711
+            c-7.236,2.666-16.708,7.235-28.409,13.703c-11.704,6.478-24.123,14.182-37.257,23.13c-13.134,8.949-26.696,20.797-40.684,35.553
+            c-13.99,14.75-25.743,30.591-35.26,47.53C64.713,327.381,52.914,308.2,44.54,286.794z M219.27,406.56
+            c-44.54,0-84.32-14.277-119.343-42.825l4.283,3.142c6.661-14.66,16.462-28.746,29.408-42.257
+            c12.944-13.511,25.41-24.413,37.401-32.695c11.991-8.274,25.028-16.077,39.115-23.414c14.084-7.323,23.691-11.991,28.835-13.983
+            c5.14-1.998,9.233-3.572,12.278-4.716l0.568-0.287h0.575c18.647,48.916,31.977,96.313,39.968,142.184
+            C268.756,401.611,244.397,406.557,219.27,406.56z M376.876,320.479c-14.086,21.796-31.696,39.834-52.817,54.104
+            c-7.81-43.776-19.985-88.415-36.549-133.902c37.877-5.907,76.8-3.142,116.771,8.274
+            C400.092,274.841,390.955,298.687,376.876,320.479z M403.706,216.698c-1.903-0.378-4.285-0.81-7.139-1.283
+            c-2.854-0.473-6.331-1.047-10.424-1.713c-4.087-0.666-8.662-1.283-13.702-1.855c-5.045-0.571-10.421-1.093-16.136-1.569
+            c-5.708-0.478-11.8-0.855-18.268-1.143c-6.479-0.284-13.042-0.428-19.705-0.428c-6.656,0-13.657,0.193-20.981,0.571
+            c-7.326,0.375-14.414,1.049-21.265,1.999c-0.575-0.953-1.287-2.524-2.143-4.714c-0.855-2.187-1.479-3.855-1.848-4.997
+            c-3.621-7.994-7.81-17.036-12.573-27.121c13.134-5.333,25.652-11.469,37.555-18.418c11.892-6.949,21.402-13.131,28.544-18.555
+            c7.139-5.43,13.895-11.188,20.27-17.277c6.379-6.09,10.513-10.323,12.423-12.703c1.906-2.384,3.713-4.714,5.424-6.995l0.287-0.288
+            c27.788,33.88,41.974,72.897,42.538,117.059L403.706,216.698z"/></g>
+        </symbol>
+        <symbol id="skype" viewBox="0 0 512 512">
+            <g>
+                <path fill-rule="evenodd" class="shp0" d="M438.53 328.9C438.53 359.16 427.83 385 406.41 406.42C385.01 427.83 359.17 438.54 328.91 438.54C304.16 438.54 281.9 430.92 262.11 415.69C247.44 418.74 233.16 420.26 219.27 420.26C192.05 420.26 166.02 414.98 141.18 404.42C116.35 393.85 94.93 379.58 76.95 361.59C58.96 343.6 44.68 322.19 34.12 297.35C23.56 272.51 18.28 246.48 18.28 219.27C18.28 205.37 19.8 191.09 22.84 176.44C7.62 156.65 0 134.38 0 109.63C0 79.37 10.71 53.53 32.12 32.12C53.54 10.7 79.38 0 109.64 0C134.38 0 156.65 7.61 176.45 22.84C191.1 19.79 205.38 18.27 219.27 18.27C246.5 18.27 272.52 23.55 297.36 34.11C322.2 44.68 343.61 58.95 361.6 76.94C379.58 94.93 393.86 116.34 404.42 141.18C414.99 166.02 420.26 192.05 420.26 219.27C420.26 233.16 418.74 247.44 415.7 262.09C430.92 281.89 438.53 304.16 438.53 328.9ZM334.9 266.95C334.9 257.43 333.05 248.72 329.33 240.82C325.62 232.92 321 226.41 315.48 221.27C309.96 216.13 303.02 211.47 294.64 207.28C286.27 203.09 278.42 199.86 271.09 197.57C263.75 195.29 255.43 193.1 246.11 191L216.41 184.15C210.7 182.82 206.51 181.82 203.85 181.16C201.19 180.49 197.85 179.4 193.86 177.87C189.86 176.35 187 174.83 185.29 173.3C183.58 171.78 182.01 169.78 180.58 167.31C179.16 164.83 178.44 161.98 178.44 158.74C178.44 144.08 192.15 136.76 219.55 136.76C227.74 136.76 235.06 137.9 241.54 140.19C248 142.47 253.14 145.18 256.95 148.32C260.75 151.46 264.37 154.65 267.8 157.89C271.23 161.12 275.04 163.88 279.22 166.16C283.41 168.45 287.98 169.59 292.93 169.59C301.87 169.59 309.06 166.54 314.48 160.46C319.91 154.37 322.61 147.04 322.61 138.47C322.61 128.01 317.29 118.54 306.63 110.07C295.97 101.6 282.46 95.17 266.09 90.79C249.72 86.42 232.41 84.23 214.13 84.23C201.19 84.23 188.62 85.7 176.44 88.65C164.26 91.6 152.89 96.08 142.33 102.07C131.77 108.07 123.29 116.35 116.92 126.91C110.54 137.48 107.35 149.7 107.35 163.6C107.35 175.21 109.16 185.35 112.78 194.01C116.39 202.67 121.72 209.85 128.76 215.56C135.8 221.28 143.42 225.89 151.6 229.41C159.79 232.93 169.59 236.02 181.01 238.68L222.7 248.97C239.83 253.15 250.5 256.58 254.68 259.25C260.77 263.05 263.81 268.76 263.81 276.38C263.81 283.8 260 289.94 252.39 294.8C244.77 299.65 234.78 302.07 222.41 302.07C212.7 302.07 203.99 300.55 196.28 297.5C188.57 294.46 182.39 290.79 177.73 286.51C173.06 282.22 168.74 277.95 164.74 273.66C160.74 269.38 156.36 265.71 151.6 262.66C146.85 259.62 141.71 258.1 136.19 258.1C126.67 258.1 119.49 260.95 114.63 266.66C109.78 272.38 107.35 279.51 107.35 288.07C107.35 305.58 118.96 320.57 142.18 333.04C165.41 345.51 193.1 351.74 225.26 351.74C239.16 351.74 252.48 349.98 265.23 346.46C277.99 342.93 289.64 337.85 300.21 331.19C310.77 324.52 319.2 315.63 325.47 304.49C331.76 293.36 334.9 280.84 334.9 266.95Z" />
+            </g>
+        </symbol>
+        
+    </svg>
+
+
+
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="img/modest.png" alt="Modest">
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav__link">home</a>
+                    <a href="#" class="nav__link">about</a>
+                    <a href="#" class="nav__link">work</a>
+                    <a href="#" class="nav__link">team</a>
+                    <a href="#" class="nav__link">services</a>
+                    <a href="#" class="nav__link">features</a>
+                    <a href="#" class="nav__link">contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--banner-->
+    <div class="banner">
+        <div class="container">
+            <div class="banner__inner">
+                <h1 class="banner__title">welcome to our marketplace</h1>
+                <h2 class="banner__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
+                    non, ornare sagittis dolor. Nulla vestibulu lacus ...</h2>
+                <button class="btn_banner">view more</button>
+                <button class="btn_banner">video tour</button>
+            </div>
+            <div class="circle">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle1"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--about-->
+    <div class="about">
+        <div class="container">
+            <div class="about__inner">
+                <h1 class="left_border">we are modest.</h1>
+                <div class="about__info">
+                    <div class="mission">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at. </p>
+                        <p>Phasellus sollicitudin ante eros ornare, <b>sit amet luctus lorem semper.</b>  Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
+                        <div class="about__icon">
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#google"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#behance"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#dribbble"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goals">
+                        <div class="goals__number">01</div>
+                        <div class="goals__number">02</div>
+                        <div class="goals__number">03</div>
+                    </div>
+                    <div class="goals_text">
+                        <div>
+                            <div class="goals__head">Dedication to the customers</div>
+                            <div class="gtext">Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies.</div>
+                        </div>
+                        <div>
+                            <div class="goals__head">working closely with our clients</div>
+                            <div class="gtext">Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</div>
+                        </div>
+                        <div>
+                            <div class="goals__head">increase happiness</div>
+                            <div class="gtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.</div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--team-->
+    <div class="team">
+        <div class="container">
+            <div style="margin-left:100px ;"><h1 class="left_border">meet the team.</h1></div>
+            <div class="team__inner">
+                <div class="team__item">
+                    <img class="team__photo" src="img/team1.png" alt="">
+                    <div class="overlay">
+                        <div class="links">
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                      </div>
+                    <div class="team__name">Gloria Bromley</div>
+                    <div class="team__prof">CEO and Founder</div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team2.png" alt="">
+                    <div class="overlay">
+                        <div class="links">
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                      </div>
+                    <div class="team__name">Paul Torres</div>
+                    <div class="team__prof">Head of Development</div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team3.png" alt="">
+                    <div class="overlay">
+                        <div class="links">
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                      </div>
+                    <div class="team__name">Judith Gillette</div>
+                    <div class="team__prof">Gpaphic Desinger</div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team4.png" alt="">
+                    <div class="overlay">
+                        <div class="links">
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social__item__team" href="#" target="_blank">
+                                <svg class="social__icon__team">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                      </div>
+                    <div class="team__name">Delores Reed</div>
+                    <div class="team__prof">Client Servise Director</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--work-->
+    <div class="work">
+        <div class="container">
+            <h1 class="left_border_white">lovely work.</h1>
+            <div class="work__inner">
+                <div class="gallery">
+                    <div class="gallery__item">
+                        <img class="gallery__photo" src="img/work6.png" alt="">
+                        <div class="overlay_work">
+                            <div class="hover_work">+</div>
+                            <div class="hover_text">partnership guidlines</div>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__photo" src="img/work5.png" alt="">
+                        <div class="overlay_work">
+                            <div class="hover_work">+</div>
+                            <div class="hover_text">partnership guidlines</div>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__photo" src="img/work4.png" alt="">
+                        <div class="overlay_work">
+                            <div class="hover_work">+</div>
+                            <div class="hover_text">partnership guidlines</div>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__photo" src="img/work3.png" alt="">
+                        <div class="overlay_work">
+                            <div class="hover_work">+</div>
+                            <div class="hover_text">partnership guidlines</div>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__photo" src="img/work2.png" alt="">
+                        <div class="overlay_work">
+                            <div class="hover_work">+</div>
+                            <div class="hover_text">partnership guidlines</div>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__photo" src="img/work1.png" alt="">
+                        <div class="overlay_work">
+                            <div class="hover_work">+</div>
+                            <div class="hover_text">partnership guidlines</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_work">show me more</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--services-->
+     <div class="services">
+        <div class="container">
+            <h1 class="left_border">what we do.</h1>
+            <div class="services__inner">
+                <div class="services__item">
+                    <img class="services__icon" src="img/cogs.png" alt="">
+                    <h4 class="services__title">Easy theme Setup</h4>
+                    <div class="services__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/pencil.png" alt="">
+                    <h4 class="services__title">pixel perfect design</h4>
+                    <div class="services__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/mobile.png" alt="">
+                    <h4 class="services__title">responsive display</h4>
+                    <div class="services__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/clock.png" alt="">
+                    <h4 class="services__title">24/7 support</h4>
+                    <div class="services__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/cogs.png" alt="">
+                    <h4 class="services__title">Easy theme Setup</h4>
+                    <div class="services__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/pencil.png" alt="">
+                    <h4 class="services__title">pixel perfect design</h4>
+                    <div class="services__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/mobile.png" alt="">
+                    <h4 class="services__title">responsive display</h4>
+                    <div class="services__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/clock.png" alt="">
+                    <h4 class="services__title">24/7 support</h4>
+                    <div class="services__text">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--features-->
+    <div class="features">
+        <div class="container">
+            <h1 class="left_border_white">features.</h1>    
+            <div class="features__inner">
+                <div class="features__item">
+                    <img src="img/features1.png" alt="" class="features__photo">
+                    <div class="features__title">Product Design: Eames Chairs</div>
+                    <div class="features__text">Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</div>
+                </div>
+                <div class="features__item">
+                    <img src="img/features2.png" alt="" class="features__photo">
+                    <div class="features__title">Elegant and Colorful Logos</div>
+                    <div class="features__text">I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it.</div>
+                </div>
+                <div class="features__item">
+                    <img src="img/features3.png" alt="" class="features__photo">
+                    <div class="features__title">A Showcase of Creative</div>
+                    <div class="features__text">It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!--contact-->
+    <div class="contact">
+        <div class="container">
+            <h1 class="left_border">stay in touch.</h1>  
+            <div class="contact__inner">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.249180346638!2d33.47696191597211!3d48.00889557921346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dae1c53d8261ed%3A0xe736f793a2ae0ce3!2z0JrRgNC40LLQvtGA0ZbQt9GM0LrQuNC5INCf0L7QutGA0L7QstGB0YzQutC40Lkg0LvRltGG0LXQuQ!5e0!3m2!1suk!2sua!4v1627010344845!5m2!1suk!2sua"  allowfullscreen="" loading="lazy"></iframe>
+                <div class="contact__info">
+                    <div class="contact__title">contact information</div>
+                    <div class="contact__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. </p>
+                        <p> Cras fermentum elit quis magna congue, <b>vel sodales</b>  arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus </p>
+                    </div>
+                </div>
+                <form class="contact__form" method="POST" action="message.php">
+                    <label class="distance">Your name</label>
+                    <label>Your email</label>    
+                    <input class="input__info">   
+                    <input class="input__info">
+                    <label>Your message</label>   
+                    <input class="input__text">
+                    <button class="btn__contact">send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="copyright__text">
+                    © Copyright 2014 by PSD Booster. All Rights Reserved.
+                </div>
+                <a class="footer__item" href="#" target="_blank">
+                    <svg class="footer__icon">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+                <a class="footer__item" href="#" target="_blank">
+                    <svg class="footer__icon">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+                <a class="footer__item" href="#" target="_blank">
+                    <svg class="footer__icon">
+                        <use xlink:href="#skype"></use>
+                    </svg>
+                </a>
+                <a class="footer__item" href="#" target="_blank">
+                    <svg class="footer__icon">
+                        <use xlink:href="#behance"></use>
+                    </svg>
+                </a>
+                <a class="footer__item" href="#" target="_blank">
+                    <svg class="footer__icon">
+                        <use xlink:href="#linkedin"></use>
+                    </svg>
+                </a> 
+                
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
